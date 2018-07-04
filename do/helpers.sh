@@ -1,3 +1,5 @@
+#!/bin/bash
+
 do_flask_up_check() {
 	max_checks=30
 	checks=0
