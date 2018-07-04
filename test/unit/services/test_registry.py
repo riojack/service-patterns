@@ -11,7 +11,9 @@ class RegistryTest(TestCase):
 
         reg.add_service(svc_name, svc)
 
-        self.assertEqual(svc, reg.get_service(svc_name))
+        expected_svc = reg.get_service(svc_name)
+
+        self.assertEqual(svc, expected_svc)
 
 
 class FooBarTestService(object):
