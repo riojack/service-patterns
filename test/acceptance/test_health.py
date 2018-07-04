@@ -11,7 +11,7 @@ def bdd_test__bootstrap(resp):
 
 
 @pytest.fixture
-def response():
+def resp():
     return requests.get('http://127.0.0.1:3057/health')
 
 
